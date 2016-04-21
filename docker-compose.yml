@@ -3,11 +3,11 @@ php:
   ports:
    - "9000:9000"
   volumes:
-   - ./src:/usr/share/nginx/html
+   - /var/www:/usr/share/nginx/html
 nginx:
   build: ./nginx
   ports:
    - "80:80"
   volumes:
-   - ./src:/usr/share/nginx/html
+   - /var/www:/usr/share/nginx/html
 
